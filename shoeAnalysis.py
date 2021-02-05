@@ -62,12 +62,12 @@ sp500.plot(x ='Date', y='SP500', kind = 'scatter')
 plt.show()
 
 #grouping stockX data by date
-stockX = stockX.groupby('orderDate').mean('profit')
-print(stockX.head())
+stockX1 = stockX.groupby('orderDate').mean('profit')
+print(stockX1.head())
 
 
 #merging the dataframes on date
-merger = pd.merge(stockX, sp500,left_on=['orderDate'],right_on=['Date'])
+merger = pd.merge(stockX1, sp500,left_on=['orderDate'],right_on=['Date'])
 
 # create figure and axis objects with subplots()
 fig,ax = plt.subplots()
@@ -98,5 +98,5 @@ print(correlation)
 
 #What years had the highest profits for shoe reselling
 #Grouping data by year
-mergedByyear = stockX.groupby(stockX['orderDate'].dt.year).mean('profit')
-print(mergedByyear.head())
+mergedByyear = stockX.groupby(stockX['orderDate'].dt.month).mean('profit')
+print(mergedByyear)
