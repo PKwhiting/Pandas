@@ -5,7 +5,7 @@ https://stockx.com/news/the-2019-data-contest/
 https://www.nasdaq.com/market-activity/index/spx/historical
 
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/i8-3WUje6JA)
 
 # Data Analysis Results
 
